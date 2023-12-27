@@ -1,0 +1,18 @@
+#employeeTableView {
+    -fx-background-color: #f4f4f4;
+}
+.table-view .column-header {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.table-row-cell:odd {
+    -fx-background-color: #e0e0e0;
+}
+.table-row-cell:hover {
+    -fx-background-color: #d1d1d1;
+}
+.table-row-cell:selected {
+    -fx-background-color: brown;
+    -fx-text-fill: white;
+}

@@ -1,0 +1,30 @@
+
+.update-container {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #8e44ad);
+    -fx-padding: 20;
+}
+.update-employee-label {
+    -fx-font-size: 16pt;
+    -fx-text-fill: #333333;
+}
+
+.update-text-field {
+    -fx-pref-width: 200;
+    -fx-font-size: 14pt;
+    -fx-border-color: #999999;
+    -fx-border-width: 2;
+    -fx-background-color: linear-gradient(to bottom, #3498db, #8e44ad);
+    -fx-text-fill: #333333;
+}
+
+.update-buttons {
+    -fx-spacing: 20;
+    -fx-font-size: 5pt;
+}
+
+.update-buttons .button {
+    -fx-font-size: 14pt;
+    -fx-background-color: linear-gradient(to bottom, #66cc99, #339966);
+    -fx-text-fill: #333333;
+    -fx-pref-width: 100;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.projet.DepartementController"
+      prefHeight="400.0" prefWidth="600.0">
+    <stylesheets>
+        <URL value="@statistics.css"/>
+    </stylesheets>
+    <Label text="Statistics" styleClass="title-label"/>
+
+    <HBox spacing="10" styleClass="statistics-box">
+        <Label text="Total Employees:" styleClass="statistics-label"/>
+        <Label fx:id="totalEmployeesLabel" styleClass="statistics-value"/>
+    </HBox>
+    <HBox spacing="10" styleClass="statistics-box">
+        <Label text="Department with Max Employees:" styleClass="statistics-label"/>
+        <Label fx:id="maxEmployeesDepartmentLabel" styleClass="statistics-value"/>
+    </HBox>
+    <HBox spacing="10" styleClass="statistics-box">
+        <Label text="Number of Employees in a Department:" styleClass="statistics-label"/>
+        <Text fx:id="numberOfEmployeesInDepartment" styleClass="statistics-value"/>
+    </HBox>
+    <HBox spacing="10" styleClass="statistics-box">
+        <Label text="Total Salary in a Department:" styleClass="statistics-label"/>
+        <Text fx:id="totalSalaryDepartment" styleClass="statistics-value"/>
+    </HBox>
+    <HBox spacing="10" styleClass="statistics-box">
+        <Label text="Select Department:" styleClass="statistics-label"/>
+        <ChoiceBox fx:id="departmentChoiceBox" onAction="#handleDepartmentSelection"/>
+    </HBox>
+    <HBox spacing="10" styleClass="statistics-box">
+        <Label text="Total Salary in the Company:" styleClass="statistics-label"/>
+        <Label fx:id="totalSalaryCompanyLabel" styleClass="statistics-value"/>
+    </HBox>
+
+</VBox>

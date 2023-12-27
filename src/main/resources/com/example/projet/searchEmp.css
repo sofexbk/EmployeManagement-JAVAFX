@@ -1,0 +1,18 @@
+
+VBox {
+    -fx-background-color: linear-gradient(to bottom, #5D4037, #673AB7);
+    -fx-padding: 20;
+}
+
+.table-view .column-header {
+    -fx-text-fill: dark;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: #4E342E;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #5D4037;
+}

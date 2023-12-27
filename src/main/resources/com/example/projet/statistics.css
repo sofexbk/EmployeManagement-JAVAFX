@@ -1,0 +1,38 @@
+
+VBox {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #8e44ad);
+    -fx-padding: 20;
+}
+
+.title-label {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0 20 0;
+    -fx-text-fill: white;
+}
+.statistics-box {
+    -fx-spacing: 10;
+    -fx-padding: 10 0 10 0;
+}
+.statistics-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.statistics-value {
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+}
+
+.back-to-menu-button {
+    -fx-font-size: 16px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 40px;
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+}
+.back-to-menu-button:hover {
+    -fx-background-color: #2980b9;
+}

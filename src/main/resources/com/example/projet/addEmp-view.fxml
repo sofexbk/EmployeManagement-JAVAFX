@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+
+<VBox alignment="CENTER" prefHeight="626.0" prefWidth="576.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.projet.EmployeController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+    <stylesheets>
+        <URL value="@addEmp.css" />
+    </stylesheets>
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter Employé">
+      <font>
+         <Font size="41.0" />
+      </font>
+   </Text>
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NOM" />
+   <TextField fx:id="textNom" />
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SALAIRE" />
+   <TextField fx:id="testSalaire" />
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="AGE" />
+   <TextField fx:id="textAge" />
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID DEPARTMENT" />
+   <TextField fx:id="textDepartement" />
+    <Label fx:id="errorLabel" textFill="red" />
+    <Label fx:id="successLabel" textFill="green" />
+    <Button mnemonicParsing="false" onAction="#addEmploye" text="Ajouter" />
+</VBox>

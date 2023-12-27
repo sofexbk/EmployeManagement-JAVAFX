@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import java.net.URL?>
+<VBox alignment="CENTER" prefHeight="300.0" prefWidth="400.0" spacing="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.DepartementController">
+    <Label text="Add Department" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    <stylesheets>
+        <URL value="@addDept.css" />
+    </stylesheets>
+    <HBox spacing="10">
+        <Label text="Department Id:" />
+        <TextField fx:id="departmentIdTextField" promptText="Enter Department Name" />
+    </HBox>
+    <HBox spacing="10">
+        <Label text="Department Name:" />
+        <TextField fx:id="departmentNameTextField" promptText="Enter Department Name" />
+    </HBox>
+    <Button onAction="#addDepartment" text="Add Department" />
+
+    <Label fx:id="statusLabel" />
+
+</VBox>

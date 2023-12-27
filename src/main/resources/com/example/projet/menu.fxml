@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import java.net.URL?>
+<VBox alignment="CENTER" prefHeight="626.0" prefWidth="576.0" styleClass="container" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet.MenuController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <stylesheets>
+        <URL value="@menu.css" />
+    </stylesheets>
+    <Text fx:id="titleMenu" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30px; -fx-font-weight: bold; -fx-margin-bottom: 20px;" text="Gestion des Employés et Départements">
+        <VBox.margin>
+            <Insets bottom="10.0"/>
+        </VBox.margin>
+        <font>
+            <Font name="System Bold Italic" size="27.0" />
+        </font>
+    </Text>
+    <Button onAction="#listEmployee" styleClass="menu-button" text="Liste d'employés">
+        <VBox.margin>
+            <Insets bottom="10.0"/>
+        </VBox.margin>
+    </Button>
+
+    <Button onAction="#addEmployee" styleClass="menu-button" text="Ajouter un Nouvel Employé">
+        <VBox.margin>
+            <Insets bottom="10.0"/>
+        </VBox.margin>
+    </Button>
+
+    <Button onAction="#updateEmployee" styleClass="menu-button" text="Modifier Infos d'un Employé" >
+        <VBox.margin>
+            <Insets bottom="10.0"/>
+        </VBox.margin>
+    </Button>
+
+    <Button onAction="#deleteEmployee" styleClass="menu-button" text="Supprimer un Employé" >
+        <VBox.margin>
+            <Insets bottom="10.0"/>
+        </VBox.margin>
+    </Button>
+
+    <Button onAction="#searchEmployees" styleClass="menu-button" text="Afficher les Employés d'un Département">
+        <VBox.margin>
+            <Insets bottom="10.0"/>
+        </VBox.margin>
+    </Button>
+    <Button onAction="#addDept" styleClass="menu-button" text="Ajouter un Nouveau Département">
+        <VBox.margin>
+            <Insets bottom="10.0"/>
+        </VBox.margin>
+    </Button>
+
+
+    <!-- <Button onAction="#reafecterEmploye" styleClass="menu-button" text="Réafecter un employé vers un nouveau département">
+         <VBox.margin>
+             <Insets bottom="10.0"/>
+         </VBox.margin>
+     </Button>-->
+
+    <Button onAction="#showStatistics" styleClass="menu-button" text="Statistiques" >
+        <VBox.margin>
+            <Insets bottom="10.0"/>
+        </VBox.margin>
+    </Button>
+
+    <Button onAction="#exit" styleClass="button-quitter" text="Quitter" />
+
+</VBox>
